@@ -7,4 +7,4 @@ Cat-themed logos for the 2023 MDAnalysis UGM, created by Fiona Naughton. Copyrig
 ## License
 Licensed under a Creative Commons [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) License.
 
-The original MDAnalysis 'Atom' logo was created by Christian Beckstein and is Copyright (c) 2011 Christian Beckstein (@beckstein) 
+The original MDAnalysis 'Atom' logo was created by Christian Beckstein (@beckstein).
