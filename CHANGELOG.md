@@ -22,11 +22,13 @@ The rules for this file:
 <!-- GitHub usernames of contributors to this release -->
 - IAlibay
 - lilyminium
+- fiona-naughton
 
 ### Added
 <!-- New added features -->
 - Added LICENSE
 - Added AUTHORS, CHANGELOG and code of conduct (PR #1)
+- Add logos
 
 ### Fixed
 <!-- Bug fixes -->
