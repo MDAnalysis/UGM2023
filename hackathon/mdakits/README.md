@@ -2,7 +2,7 @@
 
 [MDAKits](https://mdakits.mdanalysis.org/) are
 standalone packages containing code using MDAnalysis components that
-solves a specific scientific problems or in some form enhances the
+solve a specific scientific problems or in some form enhances the
 functionality of MDAnalysis core library. An MDAKit can be written by
 anyone and hosted anywhere.
 
