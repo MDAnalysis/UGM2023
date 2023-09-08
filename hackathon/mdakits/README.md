@@ -9,7 +9,7 @@ anyone and hosted anywhere.
 ## Team
 
 The MDAKits team (@ianmkenney, @lilyminium, @fiona-naughton, @IAlibay,
-@orbeckst) will work with you on 
+@orbeckst) will work with you on creating an MDAKit.
 
 
 ## About MDAKits...
