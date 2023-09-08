@@ -15,7 +15,7 @@ The MDAKits team (@ianmkenney, @lilyminium, @fiona-naughton, @IAlibay,
 ## About MDAKits...
 
 A MDAKit can be registered in the [MDAKits
-registry](https://mdakits.mdanalysis.org/mdakits.html) and ar thus be
+registry](https://mdakits.mdanalysis.org/mdakits.html) and thus be
 advertised to the whole MDAnalysis community. They will also be
 continuously tested against the latest released version and the
 current development version of the core MDAnalysis library so that
