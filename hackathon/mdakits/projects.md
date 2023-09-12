@@ -165,11 +165,6 @@ Ring puckering
 - Hill Reilley, Pickett angles
 - ...
 
-## Converters for other libraries ##
-
-**TODO**
-
-
 
 ## TEMPLATE {project title} ##
 
