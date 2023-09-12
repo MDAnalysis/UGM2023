@@ -37,4 +37,4 @@ MDAKits paper
 
 ## Project ideas
 
-TBD -- link to indidvidual files
+See the [list of Project Ideas](./projects.md).
