@@ -27,7 +27,7 @@ different frames of the trajectory.
    the [scikit-learn clustering][] algorithms that can work on raw
    data (such as K-means). Use the `AnalysisBase` framework to write
    the analysis class (see the [tutorial on writing your own
-   trajectory analysis][[UserGuide AnalysisBase]].
+   trajectory analysis][UserGuide AnalysisBase].
 1. Create an MDAKit that makes `ClusterAnalysis` available.
 3. Implement additional clustering methods such as GROMOS clustering
    [[Daura 1999]](#Daura1999) (described below in more detail).
@@ -120,8 +120,8 @@ For this project you would
    how to pass information from MDAnalysis to `freesasa` so that it
    can compute areas and volumes. 
 2. Write a `SASAnalysis` class using the `AnalysisBase` framework (see
-   the [tutorial on writing your own trajectory analysis][[UserGuide
-   AnalysisBase]].
+   the [tutorial on writing your own trajectory analysis][UserGuide
+   AnalysisBase].
 3. create test cases (use existing files in MDA and run external
    implementation for reference)
 4. benchmark performance
