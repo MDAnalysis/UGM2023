@@ -75,18 +75,27 @@ densities for each cluster.
 
 ## New file formats ##
 
-**TODO**
+MDAnalysis supports a wide range of file formats for reading/writing 
+coordinates and topologies 
+(https://userguide.mdanalysis.org/stable/formats/index.html). 
+However, there are still some file formats that are missing - e.g.
+[PDBx/mmCIF][], which has replaced the PDB format as the default 
+format for the Protein Data Bank (see Issue
+[#2367](https://github.com/MDAnalysis/mdanalysis/issues/2367)).
+We also welcome the addition of support for any other file formats 
+we are currently missing.
 
-New file format as a MDAKit: 
+### Where to start
+- Identify a file format currently not supported by MDAnaylsis - if you
+don't have a particular format in mind, support for PDBx/mmCIF has been
+frequntly requested.
+- Become familiar with our [reader/writer API](https://docs.mdanalysis.org/stable/documentation_pages/topology_modules.html) 
+and see how existing supported file formats are dealt with. 
+- Are there existing tools that read this format? Remember your Kit could use 
+these as dependencies.
 
-- pdbx or mmcif (https://github.com/MDAnalysis/mdanalysis/issues/2367)
-— can be initially rough and just use any other dependencies to get
-  the job done and we can then later see if we want to move it to
-  core.
-  
-  
+[PDBx/mmCIF]: (https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/beginner%E2%80%99s-guide-to-pdb-structures-and-the-pdbx-mmcif-format)
 
-## Solvent accessible surface (SASA) ##
 
 
 ## Molecular volume and surface analysis
@@ -142,28 +151,62 @@ For this project you would
 Contact analysis (however you define it but really just something
 better than native contacts)
 
-## Structural analysis ##
 
-**TODO**
+## Secondary Structure analysis ##
 
-- DSSP
-- stride
-- ... ?
+Secondary structure is a fundamental part of protein conformation. 
+Algorithms such as STRIDE [[Frishman 1995]](#Frishman1995) and 
+DSSP [[Kabsch 1983]](#Kabsch1983) calculate backbone dihedral angles
+and hydrogen-bonding energy from atomic coordinate to assign secondary 
+stucture based on a database of assignments.
+
+MDAnalysis does not currently feature a tool for the identification
+of secondary structure features (see issues 
+[#1612](https://github.com/MDAnalysis/mdanalysis/issues/1612) and 
+[#2608](https://github.com/MDAnalysis/mdanalysis/issues/2608)). 
+
+An MDAKit allowng for secondary structure alignment could implement 
+STRIDE or DSSP based on the initial algorithms (see references below), 
+or make use of an existing implementaiton.
+
+
+### References
+1. <a id="Frishman1995"/>Frishman,D & Argos,P. (1995) Knowledge-based secondary structure assignment. Proteins: structure, function and genetics, 23, 566-579.
+2. <a id="Kabsch1983"/>Kabsch, W. & Sander,C. (1983) Dictionary of protein secondary structure: pattern recognition of hydrogen-bonded and geometrical features. Biopolymers, 22: 2577-2637.
 
 
 ## Voronoi tessellation ##
 
-**TODO**
+A [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram) is 
+the division of a space into regions around a set of seed points such 
+that each point in a given region is closer to that seed point than 
+any other. Voronoi tessellations can be used in various density and 
+spatial analysis, e.g. for characterizing membranes or interaction 
+surfaces/binding sites. 
+
+Vornoi tessellation and related algorithims (e.g. Delaunay triangulation) 
+has been implemented in scipy (https://docs.scipy.org/doc/scipy/reference/spatial.html#delaunay-triangulation-convex-hulls-and-voronoi-diagrams).
+
+
 
 ## Ring puckering ##
 
-**TODO**
+Ring groups can adopt a variety of “puckered” geometries that influence 
+their physical and chemical properties. Several formulations exist for 
+quantifying this puckering, e.g. Pickett angles [[Strauss 1970]](#Strauss1970), 
+Cremer-Pople [[Cremer 1975]](#Cremer1975), and Hill-Reilly [[Hill 2007]](#Hill2007).
 
-Ring puckering 
+MDAnalysis currently features tools for assessing puckering in 5-membered 
+rings in our [nucleic acid analysis module](https://docs.mdanalysis.org/stable/documentation_pages/analysis/nuclinfo.html), 
+however such capabilities are lacking for 6 (or higher) membered rings.
 
-- Cremer-Pople for 6+ membered rings
-- Hill Reilley, Pickett angles
-- ...
+
+
+### References
+1. <a id="Strauss1970"/>Strauss, H.L.; Pickett, H.M; Conformational structure, energy and inversion rates of cyclohexane and some related oxanes. J. Am. Chem. Soc. 1970, 92: 7281-7290 https://doi-org.ucsf.idm.oclc.org/10.1021/ja00728a009
+2. <a id="Cremer1975"/>Cremer D., Pople, J.A.; General definition of ring puckering coordinates. J. Am. Chem. Soc 1975, 97: 1354-1358 https://doi.org/10.1021/ja00839a011
+3. <a id="Hill2007"/>Hill, A. D.; Reilly, P. J. Puckering Coordinates of Monocyclic Rings by Triangular Decomposition. J. Chem. Inf. Model. 2007, 47: 1031– 1035 https://doi.org/10.1021/ci600492e
+
 
 
 ## TEMPLATE {project title} ##
