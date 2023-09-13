@@ -264,8 +264,8 @@ quantifying this puckering, e.g. Pickett angles [[Strauss 1970]](#Strauss1970),
 Cremer-Pople [[Cremer 1975]](#Cremer1975), and Hill-Reilly [[Hill 2007]](#Hill2007).
 
 MDAnalysis currently features tools for assessing puckering in 5-membered 
-rings in our [nucleic acid analysis module](https://docs.mdanalysis.org/stable/documentation_pages/analysis/nuclinfo.html), 
-however such capabilities are lacking for 6 (or higher) membered rings.
+rings in our [nucleic acid analysis module](https://docs.mdanalysis.org/stable/documentation_pages/analysis/nuclinfo.html); 
+however, such capabilities are lacking for 6 (or higher) membered rings.
 
 
 ### References
