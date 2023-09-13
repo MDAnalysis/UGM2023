@@ -78,7 +78,7 @@ If you already have code for this - awesome! You can jump right into
 [turning your code into an MDAKit](https://mdakits.mdanalysis.org/makingakit.html).
 
 If you have an idea but don't yet have code (or it's a work-in-progress) - 
-that's also awesome! Here is your oppurtunity to get things rolling.
+that's also awesome! Here is your opportunity to get things rolling.
 
 In both cases, we welcome you to suggest your idea ahead of the hackathon
 for discussion and to find others willing to help make your Kit a reality.
