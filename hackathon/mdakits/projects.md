@@ -116,7 +116,7 @@ and [topology files (atom information)](https://docs.mdanalysis.org/stable/docum
 as appropriate; and look at how existing supported file formats
 are handled.
 - Create a Kit featuring a new reader/writer class, using `ReaderBase`/`WriterBase`,
-for the new file format. If there are existing tool that could
+for the new file format. If there are existing tools that could
 aid in reading this format, your Kit could use these as dependencies.
 
 [PDBx/mmCIF]: (https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/beginner%E2%80%99s-guide-to-pdb-structures-and-the-pdbx-mmcif-format)
