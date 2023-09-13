@@ -21,25 +21,22 @@ One can then use any number of [clustering][] algorithms to partition
 the similarity matrix and thus assign different cluster numbers to the
 different frames of the trajectory. 
 
-### Objectives ###
+MDAnalysis implements some clustering methods within the ENCORE module 
+for Ensemble Similarity Calculations  (namely, Affinity Propogation and 
+DBSCAN/KMeans, via scikit-learn; as described 
+[in the docs here](https://docs.mdanalysis.org/stable/documentation_pages/analysis/encore/clustering.html#clustering-frontend-mdanalysis-analysis-encore-clustering-clusteringmethod).
+However, a more general-use cluster analysis tool, featuring a larger 
+selection of clustering algorithms would likely be useful to many users.
 
-1. Create a `ClusterAnalysis` class that allows the user to run any of
-   the [scikit-learn clustering][] algorithms that can work on raw
-   data (such as K-means). Use the `AnalysisBase` framework to write
-   the analysis class (see the [tutorial on writing your own
-   trajectory analysis][UserGuide AnalysisBase].
-1. Create an MDAKit that makes `ClusterAnalysis` available.
-3. Implement additional clustering methods such as GROMOS clustering
-   [[Daura 1999]](#Daura1999) (described below in more detail).
-
-
-### Background ###
+Clustering methods could include -
 
 * [scikit-learn clustering][] contains _many_ clustering algorithms
   that can be either used with a similarity matrix or directly with
   trajectory data like coordinates.
+  
 * The GROMOS clustering algorithm is widely used in biomolecular
-  simulations   [[Daura 1999]](#Daura1999):
+  simulations [[Daura 1999]](#Daura1999). (See Issue
+  [#2876](https://github.com/MDAnalysis/mdanalysis/issues/2876and has been requested)
   
     "To find clusters of structures in a trajectory the RMSD of atom
     positions between all pairs of structures was determined. For each
@@ -53,6 +50,18 @@ different frames of the trajectory.
     pool of structures. The process was repeated until the pool of
     structures was empty. In this way, a series of nonoverlapping
     clusters of structures was obtained."
+
+### Objectives ###
+
+- Create a `ClusterAnalysis` class that allows the user to run any of
+   the [scikit-learn clustering][] algorithms that can work on raw
+   data (such as K-means). Use the `AnalysisBase` framework to write
+   the analysis class (see the [tutorial on writing your own
+   trajectory analysis][UserGuide AnalysisBase].
+- Create an MDAKit that makes `ClusterAnalysis` available.
+- Implement additional clustering methods such as GROMOS clustering
+   [[Daura 1999]](#Daura1999) (described above in more detail).
+
 
 ### References ###
 
@@ -68,10 +77,21 @@ different frames of the trajectory.
 
 ## Clustered density analysis ##
 
-**TODO**
+In addition to identifying different states of a biomolecule by 
+clustering over e.g. RMSD (as described above), clustering can 
+also be used to identify e.g. small molecule/ion binding sites 
+or sidechain configurations by aligning to a ‘fixed’ reference 
+(e.g. protein) and performing clustering using the coordinates 
+of the group of interest. Subsequent density calculations for 
+each cluster can allow for further comparison and visualization.  
 
-Clustered density analysis: (1) cluster trajectory, (2) create
-densities for each cluster.
+### Where to start ###
+- (Independently or in conjunction with the above, create a
+`ClusterAnalysis` class that allows clustering to be performed
+over 3D coordinate of a selected group.)
+- Create a class, making use of the existing [density analysis]( https://docs.mdanalysis.org/stable/documentation_pages/analysis/density.html#module-MDAnalysis.analysis.density)
+that generates densities from a list of indicies of frames
+belonging to each cluster, as returned by `ClusterAnalysis`.
 
 
 ## New file formats ##
