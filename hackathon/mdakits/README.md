@@ -71,7 +71,7 @@ surrounded by other enthusiastic MDAnalysis contributors.
 
 If you’ve ever performed (or want to perform) any analysis/trajectory 
 manipulation with MDAnalysis that is not already directly implemented, 
-chances are that others will, too and could benefit from the creation 
+chances are that others will too, and could benefit from the creation 
 of an MDAKit! 
 
 If you already have code for this - awesome! You can jump right into 
