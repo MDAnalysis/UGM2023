@@ -34,7 +34,57 @@ MDAKits paper
   TX, 2023. doi:
   [10.25080/gerudo-f2bc6f59-00a](https://doi.org/10.25080/gerudo-f2bc6f59-00a).
 
+## Getting started
+
+Pick an idea for a stand-alone feature you, or others, want to see 
+possible through MDAnalysis - see the list of Project ideas below!
+We encourage you to discuss any ideas in the lead-up to the hackathon, 
+here or on the UGM discord channel (More details TBA).
+
+Read our guide on making an MDAKit (https://mdakits.mdanalysis.org/makingakit.html).
+(Additional materials TBA.)
+
+Some other things to keep in mind:
+- *Use the MDAnalysis API*: MDAnalysis features a mature API aimed to
+promote extensibility. We recommend you see how our collection of base
+classes and other existing tools could simplify your Kit and present a
+consistent interface to potential users; e.g.  AnalysisBase for
+trajectory-based analysis
+https://userguide.mdanalysis.org/stable/examples/analysis/custom_trajectory_analysis.html
+- *Using external packages*: Many tools and analyses have already been
+implemented as stand-alone tools or in other packages. It’s worth
+checking to see what’s available - it may be easier to include an external
+tool as a dependency than to make a Kit “from scratch”. Keep in mind how
+easy it would be to install and move data between MDAnalysis and the
+external implementation, and make sure to check the licence
+before including it in your Kit.
+
+
+At the hackathon, the MDAKits team will be around to answer any questions
+you may have about making and registering an MDAKit. While we do not require
+collaboration, we do encourage you to make use of this opportunity being
+surrounded by other enthusiastic MDAnalysis contributors.
 
 ## Project ideas
 
-See the [list of Project Ideas](./projects.md).
+### Bring your own idea!
+
+If you’ve ever performed (or want to perform) any analysis/trajectory 
+manipulation with MDAnalysis that is not already directly implemented, 
+chances are that others will, too and could benefit from the creation 
+of an MDAKit! 
+
+If you already have code for this - awesome! You can jump right into 
+[turning your code into an MDAKit](https://mdakits.mdanalysis.org/makingakit.html).
+
+If you have an idea but don't yet have code (or it's a work-progress) - 
+that's also awesome! Here is your oppurtunity to get things rolling.
+
+In both cases, we welcome you to suggest your idea ahead of the hackathon
+for discussion and to find others willing to help make your Kit a reality.
+
+
+### Work on a kit based on a requested feature
+
+See the [list of Project Ideas](./projects.md). Pick an idea from this
+list, or use it to inspire your own Kit idea.
