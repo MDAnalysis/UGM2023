@@ -38,6 +38,7 @@ Clustering methods could include -
   simulations [[Daura 1999]](#Daura1999). (See Issue
   [#2876](https://github.com/MDAnalysis/mdanalysis/issues/2876and has been requested)
   
+  The following excerpt from Daura et al. describes the algorithm:
     "To find clusters of structures in a trajectory the RMSD of atom
     positions between all pairs of structures was determined. For each
     structure the number of other structures for which the RMSD was
