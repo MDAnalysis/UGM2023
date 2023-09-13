@@ -157,9 +157,9 @@ For this project you would
 2. Write a `SASAnalysis` class using the `AnalysisBase` framework (see
    the [tutorial on writing your own trajectory analysis][UserGuide
    AnalysisBase].
-3. create test cases (use existing files in MDA and run external
+3. Create test cases (use existing files in MDA and run external
    implementation for reference)
-4. benchmark performance
+4. Benchmark performance
 
 
 ### References ###
