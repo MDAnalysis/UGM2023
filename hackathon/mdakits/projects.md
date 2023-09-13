@@ -65,6 +65,7 @@ different frames of the trajectory.
 
 [UserGuide AnalysisBase]: https://userguide.mdanalysis.org/stable/examples/analysis/custom_trajectory_analysis.html
 
+
 ## Clustered density analysis ##
 
 **TODO**
@@ -185,6 +186,7 @@ array.
 [hydrogen bond analysis module]: https://docs.mdanalysis.org/stable/documentation_pages/analysis/hydrogenbonds.html#MDAnalysis.analysis.hydrogenbonds.hbond_analysis.HydrogenBondAnalysis.hbonds
 [custom trajectory analysis]: https://userguide.mdanalysis.org/stable/examples/analysis/custom_trajectory_analysis.html
 
+
 ## Secondary Structure analysis ##
 
 Secondary structure is a fundamental part of protein conformation. 
@@ -197,13 +199,24 @@ MDAnalysis does not currently feature a tool for the identification
 of secondary structure features (see issues 
 [#1612](https://github.com/MDAnalysis/mdanalysis/issues/1612) and 
 [#2608](https://github.com/MDAnalysis/mdanalysis/issues/2608)). 
-
+The ability to make atomselections based on the calculated
+secondary structure could also be of great use.
 
 ### Where to start
+- Become familiar with the algorithms below and investigate
+external tools that already implement these (e.g.
+[mkdspp](https://www.mankier.com/1/mkdssp#Synopsis),
+- Add a `SecondaryStructure` class, using `AnalysisBase`, that uses
+DSSP and/or STRIDE, implemented natively or using an external
+tool as a dependency, to calculate the secondary structure of a
+selection in each frame.
+- Consider allowing the calculated secondary structure to be read
+back alongside the trajectory e.g. using the [Auxilliary
+module](https://docs.mdanalysis.org/stable/documentation_pages/auxiliary/init.html),
+and allow for atomselections based on secondary structure.
 
-An MDAKit allowng for secondary structure alignment could implement 
-STRIDE or DSSP based on the initial algorithms (see references below), 
-or make use of an existing implementaiton.
+
+
 
 ### References
 1. <a id="Frishman1995"/>Frishman,D & Argos,P. (1995) Knowledge-based secondary structure assignment. Proteins: structure, function and genetics, 23, 566-579.
@@ -223,7 +236,6 @@ Vornoi tessellation and related algorithims (e.g. Delaunay triangulation)
 has been implemented in scipy (https://docs.scipy.org/doc/scipy/reference/spatial.html#delaunay-triangulation-convex-hulls-and-voronoi-diagrams).
 
 
-
 ## Ring puckering ##
 
 Ring groups can adopt a variety of “puckered” geometries that influence 
@@ -236,20 +248,7 @@ rings in our [nucleic acid analysis module](https://docs.mdanalysis.org/stable/d
 however such capabilities are lacking for 6 (or higher) membered rings.
 
 
-
 ### References
 1. <a id="Strauss1970"/>Strauss, H.L.; Pickett, H.M; Conformational structure, energy and inversion rates of cyclohexane and some related oxanes. J. Am. Chem. Soc. 1970, 92: 7281-7290 https://doi-org.ucsf.idm.oclc.org/10.1021/ja00728a009
 2. <a id="Cremer1975"/>Cremer D., Pople, J.A.; General definition of ring puckering coordinates. J. Am. Chem. Soc 1975, 97: 1354-1358 https://doi.org/10.1021/ja00839a011
 3. <a id="Hill2007"/>Hill, A. D.; Reilly, P. J. Puckering Coordinates of Monocyclic Rings by Triangular Decomposition. J. Chem. Inf. Model. 2007, 47: 1031– 1035 https://doi.org/10.1021/ci600492e
-
-
-
-## TEMPLATE {project title} ##
-
-summary
-
-### Objectives ###
-
-### Related ###
-
-### References ###
