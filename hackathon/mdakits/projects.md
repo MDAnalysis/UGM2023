@@ -87,12 +87,15 @@ we are currently missing.
 
 ### Where to start
 - Identify a file format currently not supported by MDAnaylsis - if you
-don't have a particular format in mind, support for PDBx/mmCIF has been
-frequntly requested.
+don't have a particular format in mind, support for PDBx/mmCIF is a
+frequent request.
 - Become familiar with our [reader/writer API](https://docs.mdanalysis.org/stable/documentation_pages/topology_modules.html) 
-and see how existing supported file formats are dealt with. 
-- Are there existing tools that read this format? Remember your Kit could use 
-these as dependencies.
+and see how existing supported file formats are dealt with.
+- Create a Kit featuring a new reader/writer class, following the
+API, that handles the new file format.
+
+Are there existing tools could aid in reading this format? Remember
+your Kit could use these as dependencies.
 
 [PDBx/mmCIF]: (https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/beginner%E2%80%99s-guide-to-pdb-structures-and-the-pdbx-mmcif-format)
 
