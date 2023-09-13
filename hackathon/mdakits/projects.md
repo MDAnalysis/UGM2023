@@ -252,7 +252,7 @@ any other. Voronoi tessellations can be used in various density and
 spatial analysis, e.g. for characterizing membranes or interaction 
 surfaces/binding sites. 
 
-Vornoi tessellation and related algorithims (e.g. Delaunay triangulation) 
+Voronoi tessellation and related algorithms (e.g. Delaunay triangulation) 
 has been implemented in scipy (https://docs.scipy.org/doc/scipy/reference/spatial.html#delaunay-triangulation-convex-hulls-and-voronoi-diagrams).
 
 
