@@ -90,7 +90,7 @@ each cluster can allow for further comparison and visualization.
 `ClusterAnalysis` class that allows clustering to be performed
 over 3D coordinate of a selected group.)
 - Create a class, making use of the existing [density analysis]( https://docs.mdanalysis.org/stable/documentation_pages/analysis/density.html#module-MDAnalysis.analysis.density)
-that generates densities from a list of indicies of frames
+that generates densities from a list of indices of frames
 belonging to each cluster, as returned by `ClusterAnalysis`.
 
 
