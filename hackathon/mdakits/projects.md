@@ -253,7 +253,7 @@ spatial analysis, e.g. for characterizing membranes or interaction
 surfaces/binding sites. 
 
 Voronoi tessellation and related algorithms (e.g. Delaunay triangulation) 
-has been implemented in scipy (https://docs.scipy.org/doc/scipy/reference/spatial.html#delaunay-triangulation-convex-hulls-and-voronoi-diagrams).
+have been implemented in scipy (https://docs.scipy.org/doc/scipy/reference/spatial.html#delaunay-triangulation-convex-hulls-and-voronoi-diagrams).
 
 
 ## Ring puckering ##
