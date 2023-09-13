@@ -128,7 +128,7 @@ aid in reading this format, your Kit could use these as dependencies.
 *This is one of the most wanted analysis features missing in MDAnalysis.*
 
 It is often necessary to measure volume and surface area of a
-biomolecule or parts of it over a MD trajectory. MDAnalysis is
+biomolecule or parts of it over an MD trajectory. MDAnalysis is
 currently lacking this important functionality. In this project you
 will implement an analysis class that calculates the molecular volume
 and area for an atomgroup as a function of time. See issue
