@@ -89,13 +89,14 @@ we are currently missing.
 - Identify a file format currently not supported by MDAnaylsis - if you
 don't have a particular format in mind, support for PDBx/mmCIF is a
 frequent request.
-- Become familiar with our [reader/writer API](https://docs.mdanalysis.org/stable/documentation_pages/topology_modules.html) 
-and see how existing supported file formats are dealt with.
-- Create a Kit featuring a new reader/writer class, following the
-API, that handles the new file format.
-
-Are there existing tools could aid in reading this format? Remember
-your Kit could use these as dependencies.
+- Become familiar with our reader/writer API - for
+[trajectory files (coordinate data)](https://docs.mdanalysis.org/stable/documentation_pages/coordinates/init.html)
+and [topology files (atom information)](https://docs.mdanalysis.org/stable/documentation_pages/topology_modules.html)
+as appropriate; and look at how existing supported file formats
+are handled.
+- Create a Kit featuring a new reader/writer class, using `ReaderBase`/`WriterBase`,
+for the new file format. If there are existing tool that could
+aid in reading this format, your Kit could use these as dependencies.
 
 [PDBx/mmCIF]: (https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/beginner%E2%80%99s-guide-to-pdb-structures-and-the-pdbx-mmcif-format)
 
@@ -149,11 +150,40 @@ For this project you would
 
 ## Contact analysis ##
 
-**TODO**
+Identifying inter- and intra-molecular contacts is the basis of many 
+simulation analyses. A pair of atoms is often defined as “in contact” 
+when they fall within a specified cut-off distance of each other. 
 
-Contact analysis (however you define it but really just something
-better than native contacts)
+*Native contact analysis* identifies the contacts present in a reference
+structure, and then tracks the existence of these contacts across a 
+trajectory; evolution of the fraction of native contacts can be used to 
+analyse protein folding, binding or other conformational changes. 
+MDAnalysis features a [Native contacts analysis module]() that allows 
+this fraction of native contacts to be calculated over a trajectory. 
+However, the native contact approach is limited - a reference structure 
+must be defined, only contacts present in the reference structure are 
+considered, and only the total fraction of contacts is tracked, 
+not individual pairs.
 
+MDAnalysis also features a [hydrogen bond analysis module]() which does
+allow the identification of all contacts across all frames, without
+the need for a reference structure, but is geared towards the 
+the identification of hydrogen bonds. A more generalised analysis 
+could be useful to many MDAnalysis users. 
+
+### Where to start
+- Look at the existing Native Contact and Hydrogen bond analysis modules
+to see how existing contact analysis is performed
+- Create a class using `AnalysisBase` (see the guide on User Guide on
+[custom trajectory analysis]() that identifies all contacts in each frame,
+e.g. generalising the approach used by `hbond_analysis`. 
+- Additional features could include e.g. tools to allow extraction of
+timeseries data for a specified contact pair from the full contact/frame
+array.
+
+[Native contacts analysis module]: https://docs.mdanalysis.org/stable/documentation_pages/analysis/contacts.html
+[hydrogen bond analysis module]: https://docs.mdanalysis.org/stable/documentation_pages/analysis/hydrogenbonds.html#MDAnalysis.analysis.hydrogenbonds.hbond_analysis.HydrogenBondAnalysis.hbonds
+[custom trajectory analysis]: https://userguide.mdanalysis.org/stable/examples/analysis/custom_trajectory_analysis.html
 
 ## Secondary Structure analysis ##
 
@@ -168,10 +198,12 @@ of secondary structure features (see issues
 [#1612](https://github.com/MDAnalysis/mdanalysis/issues/1612) and 
 [#2608](https://github.com/MDAnalysis/mdanalysis/issues/2608)). 
 
+
+### Where to start
+
 An MDAKit allowng for secondary structure alignment could implement 
 STRIDE or DSSP based on the initial algorithms (see references below), 
 or make use of an existing implementaiton.
-
 
 ### References
 1. <a id="Frishman1995"/>Frishman,D & Argos,P. (1995) Knowledge-based secondary structure assignment. Proteins: structure, function and genetics, 23, 566-579.
