@@ -29,7 +29,7 @@ getting started.
 We have plenty of issues available for you to work on in our
 [Issue Tracker](). For first time contributors, we encourage
 you to look at our list of [easy bugs]() to fix. Have a chat with us,
-to see which one would suit you best! When you found something, please
+to see which one would suit you best! When you find something, please
 let us know in the issue that you are working on it so that other
 attendees do not work on the same thing!
 
