@@ -21,10 +21,10 @@ One can then use any number of [clustering][] algorithms to partition
 the similarity matrix and thus assign different cluster numbers to the
 different frames of the trajectory. 
 
-MDAnalysis implements some clustering methods within the ENCORE module 
-for Ensemble Similarity Calculations  (namely, Affinity Propogation and 
+The [mdaencore](https://www.mdanalysis.org/mdaencore/) MDAKit for Ensemble Similarity Calculations 
+also implements some clustering methods (namely, Affinity Propogation and 
 DBSCAN/KMeans, via scikit-learn; as described 
-[in the docs here](https://docs.mdanalysis.org/stable/documentation_pages/analysis/encore/clustering.html#clustering-frontend-mdanalysis-analysis-encore-clustering-clusteringmethod).
+[in the docs here](https://www.mdanalysis.org/mdaencore/autosummary/mdaencore.clustering.ClusteringMethod.html#module-mdaencore.clustering.ClusteringMethod)).
 However, a more general-use cluster analysis tool, featuring a larger 
 selection of clustering algorithms would likely be useful to many users.
 
