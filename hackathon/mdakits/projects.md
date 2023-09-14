@@ -76,23 +76,46 @@ Clustering methods could include -
 [UserGuide AnalysisBase]: https://userguide.mdanalysis.org/stable/examples/analysis/custom_trajectory_analysis.html
 
 
-## Clustered density analysis ##
+## State-based density analysis ##
 
-In addition to identifying different states of a biomolecule by 
-clustering over e.g. RMSD (as described above), clustering can 
-also be used to identify e.g. small molecule/ion binding sites 
-or sidechain configurations by aligning to a ‘fixed’ reference 
-(e.g. protein) and performing clustering using the coordinates 
-of the group of interest. Subsequent density calculations for 
-each cluster can allow for further comparison and visualization.  
+Calculations of densities of solvent or ligands with the 
+[MDAnalysis.analysis.density][] code can be a powerful way to
+obtain a global picture of solvent/ligand behavior in relationship
+to, e.g., a protein. Sometimes there are changes in the protein
+that lead to a different density but when averaged over the whole
+trajectory, the changes in the density are averaged out and are
+less clear. It is therefore useful to generate densities only
+for parts of the trajectory that correspond to a specific
+**state** of the system.
 
-### Where to start ###
-- (Independently or in conjunction with the above, create a
-`ClusterAnalysis` class that allows clustering to be performed
-over 3D coordinate of a selected group.)
-- Create a class, making use of the existing [density analysis]( https://docs.mdanalysis.org/stable/documentation_pages/analysis/density.html#module-MDAnalysis.analysis.density)
-that generates densities from a list of indices of frames
-belonging to each cluster, as returned by `ClusterAnalysis`.
+For our purpose here, a **state is a collection of trajectory frames**.
+Each frame only belongs to a single state.
+
+States can be identified in many difference ways. 
+* For example, we can look at the conformation of the protein itself
+  and use clustering by protein RMSD (see Project above). But we 
+  can also cluster by ligands or specific sidechains: select
+  small molecule/ion binding sites or sidechain configurations by a
+  ligning to a ‘fixed’ reference (e.g. protein) and perform 
+  clustering using the coordinates of the group of interest.
+* Compute some form of _order parameter_ and assign different states
+  based on the order parameter (e.g., a distance that describes when
+  a protein is in an "open" conformation (distance greater than a
+  cutoff) and a "closed" conformation (distance smaller than a cutoff),
+  or a distance that indicates when a small molecule is bound/not bound.
+
+### Objectives ###
+1. Create an analysis class that takes as input a list of states
+   (e.g., a dict stateID -> list of trajectory frames, or a a list of lists
+   where state 0 corresponds to list 0, state 1 to list 1, etc...)
+   and then creates a density for each state (making use of the existing
+   [MDAnalysis.analysis.density][]; note the `frames` keyword of the `run()`
+   method, which takes a list of trajectory frames.
+2. Optimize the approach so that you don't have to run `DensityAnalysis`
+   separately for each state.
+
+
+[MDAnalysis.analysis.density]: https://docs.mdanalysis.org/stable/documentation_pages/analysis/density.html
 
 
 ## New file formats ##
