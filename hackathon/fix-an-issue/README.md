@@ -21,7 +21,7 @@ and then contribute the code back using a [Pull Request]().
 Our [User Guide]() has a handy [contributors guide]() which you can
 follow for all the information you need to achieve this. Feel free
 to ask any members of the team for help if you encounter any issues
-gettting started.
+getting started.
 
 
 ## Choose an issue
