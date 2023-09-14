@@ -47,7 +47,7 @@ and work with you towards getting your contribution merged.
 
 This can sometimes be a slow process, especially when the
 code change is large and there are many Pull Requests. If you
-wish to help, you are welcome to review other's Pull Requests
+wish to help, you are welcome to review other people's Pull Requests
 by leaving comments on their code with any changes you would
 suggest!
 
