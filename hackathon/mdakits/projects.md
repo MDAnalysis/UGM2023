@@ -257,7 +257,7 @@ selection in each frame.
 - Consider allowing the calculated secondary structure to be read
 back alongside the trajectory e.g. using the [Auxilliary
 module](https://docs.mdanalysis.org/stable/documentation_pages/auxiliary/init.html),
-and allow for atomselections based on secondary structure.
+and allow for atom selections based on secondary structure.
 
 
 
