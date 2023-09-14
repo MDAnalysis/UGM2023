@@ -40,6 +40,19 @@ If you are working on your code where you use MDAnalysis and you want
 to discuss it or need some help or ideas: then bring it and chat with
 some of the core developers or other users. 
 
+### Contribute to MDAnalysis!
+
+We are always looking for new contributions to the 
+[MDAnalysis](https://github.com/MDAnalysis/mdanalysis) library. Why
+not spend this hackathon fixing one of our many issues or maybe
+even contributing a fun new enhancement?
+
+This session is particularly geared towards individuals who might not
+have previous experiences contributing to open-source projects, and
+dealing with the peculiarities of [Github](https://github.com/).
+
+For more details, go to the [fix_an_issue](./fix_an_issue) directory.
+
 ### Build an MDAKit
 
 [MDAKits](https://www.mdanalysis.org/2022/08/24/mdakits-intro/) are
