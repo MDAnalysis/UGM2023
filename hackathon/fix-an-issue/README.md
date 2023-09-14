@@ -35,7 +35,7 @@ attendees do not work on the same thing!
 
 Our recommended pick is the [doctest MEGA-issue]() which involves
 fixing our documentation so that code examples are self-contained
-and should run on their own if you tried them out! Here multiple
+and should run on their own if you try them out! Here multiple
 attendees can work on this issue, just let us know which files you
 are planning to work on.
 
