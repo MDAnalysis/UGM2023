@@ -7,7 +7,7 @@ and maintain the [MDAnalysis core library](https://github.com/MDAnalysis/mdanaly
 
 ## Team
 
-The MDAnalysis core developers team (@IAlibay, @lilyminium, @fiona-nauthon,
+The MDAnalysis core developers team (@IAlibay, @lilyminium, @fiona-naughton,
 @orbeckst, @richardjgowers, @micaela-matta) will help you along your way
 towards contributing a code change to MDAnalysis
 
