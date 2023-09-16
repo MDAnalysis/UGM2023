@@ -25,7 +25,7 @@ The [mdaencore](https://www.mdanalysis.org/mdaencore/) MDAKit for Ensemble Simil
 also implements some clustering methods (namely, Affinity Propogation and 
 DBSCAN/KMeans, via scikit-learn; as described 
 [in the docs here](https://www.mdanalysis.org/mdaencore/autosummary/mdaencore.clustering.ClusteringMethod.html#module-mdaencore.clustering.ClusteringMethod)).
-However, a more general-use cluster analysis tool, featuring a larger 
+However, a general-use cluster analysis tool, featuring a larger 
 selection of clustering algorithms would likely be useful to many users.
 
 Clustering methods could include -
@@ -36,9 +36,10 @@ Clustering methods could include -
   
 * The GROMOS clustering algorithm is widely used in biomolecular
   simulations [[Daura 1999]](#Daura1999). (See Issue
-  [#2876](https://github.com/MDAnalysis/mdanalysis/issues/2876)
+  [#2876](https://github.com/MDAnalysis/mdanalysis/issues/2876).)
   
   The following excerpt from Daura et al. describes the algorithm:
+  
     "To find clusters of structures in a trajectory the RMSD of atom
     positions between all pairs of structures was determined. For each
     structure the number of other structures for which the RMSD was
@@ -55,13 +56,13 @@ Clustering methods could include -
 ### Objectives ###
 
 - Create a `ClusterAnalysis` class that allows the user to run any of
-   the [scikit-learn clustering][] algorithms that can work on raw
-   data (such as K-means). Use the `AnalysisBase` framework to write
-   the analysis class (see the [tutorial on writing your own
-   trajectory analysis][UserGuide AnalysisBase].
+  the [scikit-learn clustering][] algorithms that can work on raw
+  data (such as K-means). Use the `AnalysisBase` framework to write
+  the analysis class (see the [tutorial on writing your own
+  trajectory analysis][UserGuide AnalysisBase].
 - Create an MDAKit that makes `ClusterAnalysis` available.
 - Implement additional clustering methods such as GROMOS clustering
-   [[Daura 1999]](#Daura1999) (described above in more detail).
+  [[Daura 1999]](#Daura1999) (described above in more detail).
 
 
 ### References ###
@@ -70,9 +71,7 @@ Clustering methods could include -
 
 [metric]: https://en.wikipedia.org/wiki/Metric_space#Definition
 [clustering]: https://en.wikipedia.org/wiki/Cluster_analysis
-
 [scikit-learn clustering]: https://scikit-learn.org/stable/modules/clustering.html
-
 [UserGuide AnalysisBase]: https://userguide.mdanalysis.org/stable/examples/analysis/custom_trajectory_analysis.html
 
 
@@ -101,7 +100,7 @@ States can be identified in many difference ways.
 * Compute some form of _order parameter_ and assign different states
   based on the order parameter (e.g., a distance that describes when
   a protein is in an "open" conformation (distance greater than a
-  cutoff) and a "closed" conformation (distance smaller than a cutoff),
+  cutoff) and a "closed" conformation (distance smaller than a cutoff)),
   or a distance that indicates when a small molecule is bound/not bound.
 
 ### Objectives ###
@@ -109,13 +108,16 @@ States can be identified in many difference ways.
    (e.g., a dict stateID -> list of trajectory frames, or a a list of lists
    where state 0 corresponds to list 0, state 1 to list 1, etc...)
    and then creates a density for each state (making use of the existing
-   [MDAnalysis.analysis.density][]; note the `frames` keyword of the `run()`
-   method, which takes a list of trajectory frames.
-2. Optimize the approach so that you don't have to run `DensityAnalysis`
+   [MDAnalysis.analysis.density.DensityAnalysis][]; note the `frames` keyword
+   of the [`run()`][MDAnalysis.analysis.density.DensityAnalysis.run()] method,
+   which takes a list of trajectory *frames*).
+3. Optimize the approach so that you don't have to run `DensityAnalysis`
    separately for each state.
 
 
 [MDAnalysis.analysis.density]: https://docs.mdanalysis.org/stable/documentation_pages/analysis/density.html
+[MDAnalysis.analysis.density.DensityAnalysis]: https://docs.mdanalysis.org/stable/documentation_pages/analysis/density.html#MDAnalysis.analysis.density.DensityAnalysis
+[MDAnalysis.analysis.density.DensityAnalysis.run()]: https://docs.mdanalysis.org/stable/documentation_pages/analysis/density.html#MDAnalysis.analysis.density.DensityAnalysis.run
 
 
 ## New file formats ##
@@ -130,21 +132,40 @@ format for the Protein Data Bank (see Issue
 We also welcome the addition of support for any other file formats 
 we are currently missing.
 
+Note that MDAnalysis can support new formats _without adding code to
+the main package_. You can put the code ("reader" and "writer" 
+classes for trajectories, "parser" classes for topologies) into a MDAKit and 
+if you use the appropriate base classes, MDAnalysis will automagically
+know how to work with the newly supported file format!
+
 ### Where to start
-- Identify a file format currently not supported by MDAnaylsis - if you
-don't have a particular format in mind, support for PDBx/mmCIF is a
-frequent request.
+
+- Identify a file format currently not supported by MDAnaylsis --- if you
+  don't have a particular format in mind, support for PDBx/mmCIF is a
+  frequent request.
+
+  (See the [PDBx/mmCIF software resources][], for example,
+  [py-mmcif][] and [biopython][] could also be used, and there exists a Python-only
+  implementation in [mmcif_pdbx][].)
 - Become familiar with our reader/writer API - for
-[trajectory files (coordinate data)](https://docs.mdanalysis.org/stable/documentation_pages/coordinates/init.html)
-and [topology files (atom information)](https://docs.mdanalysis.org/stable/documentation_pages/topology_modules.html)
-as appropriate; and look at how existing supported file formats
-are handled.
+  [trajectory files (coordinate data)](https://docs.mdanalysis.org/stable/documentation_pages/coordinates/init.html)
+  and [topology files (atom information)](https://docs.mdanalysis.org/stable/documentation_pages/topology_modules.html)
+  as appropriate; and look at how existing supported file formats
+  are handled.
 - Create a Kit featuring a new reader/writer class, using `ReaderBase`/`WriterBase`,
-for the new file format. If there are existing tools that could
-aid in reading this format, your Kit could use these as dependencies.
+  for the new file format. If there are existing tools that could
+  aid in reading this format, your Kit could use these as dependencies.
 
-[PDBx/mmCIF]: (https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/beginner%E2%80%99s-guide-to-pdb-structures-and-the-pdbx-mmcif-format)
 
+[PDBx/mmCIF]: https://pdb101.rcsb.org/learn/guide-to-understanding-pdb-data/beginner%E2%80%99s-guide-to-pdb-structures-and-the-pdbx-mmcif-format
+
+[PDBx/mmCIF software resources]: https://mmcif.wwpdb.org/docs/software-resources.html
+
+[py-mmcif]: https://github.com/rcsb/py-mmcif
+
+[biopython]: https://biopython.org/
+
+[mmcif_pdbx]: https://github.com/Electrostatics/mmcif_pdbx
 
 
 ## Molecular volume and surface analysis
@@ -164,8 +185,8 @@ and has a C core and python bindings:
 * C-library: https://github.com/mittinatten/freesasa
 * Python bindings: https://github.com/freesasa/freesasa-python
 
-> By default Lee & Richards' algorithm is used, but Shrake & Rupley's
-> is also available.
+By default Lee & Richards' algorithm is used, but Shrake & Rupley's
+is also available.
 
 
 
@@ -218,13 +239,13 @@ could be useful to many MDAnalysis users.
 
 ### Where to start
 - Look at the existing Native Contact and Hydrogen bond analysis modules
-to see how existing contact analysis is performed
+  to see how existing contact analysis is performed
 - Create a class using `AnalysisBase` (see the guide on User Guide on
-[custom trajectory analysis]() that identifies all contacts in each frame,
-e.g. generalising the approach used by `hbond_analysis`. 
+  [custom trajectory analysis]() that identifies all contacts in each frame,
+  e.g. generalising the approach used by `hbond_analysis`. 
 - Additional features could include e.g. tools to allow extraction of
-timeseries data for a specified contact pair from the full contact/frame
-array.
+  timeseries data for a specified contact pair from the full contact/frame
+  array.
 
 [Native contacts analysis module]: https://docs.mdanalysis.org/stable/documentation_pages/analysis/contacts.html
 [hydrogen bond analysis module]: https://docs.mdanalysis.org/stable/documentation_pages/analysis/hydrogenbonds.html#MDAnalysis.analysis.hydrogenbonds.hbond_analysis.HydrogenBondAnalysis.hbonds
@@ -248,16 +269,16 @@ secondary structure could also be of great use.
 
 ### Where to start
 - Become familiar with the algorithms below and investigate
-external tools that already implement these (e.g.
-[mkdspp](https://www.mankier.com/1/mkdssp#Synopsis),
+  external tools that already implement these (e.g.
+  [mkdspp](https://www.mankier.com/1/mkdssp#Synopsis),
 - Add a `SecondaryStructure` class, using `AnalysisBase`, that uses
-DSSP and/or STRIDE, implemented natively or using an external
-tool as a dependency, to calculate the secondary structure of a
-selection in each frame.
+  DSSP and/or STRIDE, implemented natively or using an external
+  tool as a dependency, to calculate the secondary structure of a
+  selection in each frame.
 - Consider allowing the calculated secondary structure to be read
-back alongside the trajectory e.g. using the [Auxilliary
-module](https://docs.mdanalysis.org/stable/documentation_pages/auxiliary/init.html),
-and allow for atom selections based on secondary structure.
+  back alongside the trajectory e.g. using the [Auxilliary
+  module](https://docs.mdanalysis.org/stable/documentation_pages/auxiliary/init.html),
+  and allow for atom selections based on secondary structure.
 
 
 
@@ -293,6 +314,6 @@ however, such capabilities are lacking for 6 (or higher) membered rings.
 
 
 ### References
-1. <a id="Strauss1970"/>Strauss, H.L.; Pickett, H.M; Conformational structure, energy and inversion rates of cyclohexane and some related oxanes. J. Am. Chem. Soc. 1970, 92: 7281-7290 https://doi-org.ucsf.idm.oclc.org/10.1021/ja00728a009
+1. <a id="Strauss1970"/>Strauss, H.L.; Pickett, H.M; Conformational structure, energy and inversion rates of cyclohexane and some related oxanes. J. Am. Chem. Soc. 1970, 92: 7281-7290 https://doi.org/10.1021/ja00728a009
 2. <a id="Cremer1975"/>Cremer D., Pople, J.A.; General definition of ring puckering coordinates. J. Am. Chem. Soc 1975, 97: 1354-1358 https://doi.org/10.1021/ja00839a011
 3. <a id="Hill2007"/>Hill, A. D.; Reilly, P. J. Puckering Coordinates of Monocyclic Rings by Triangular Decomposition. J. Chem. Inf. Model. 2007, 47: 1031– 1035 https://doi.org/10.1021/ci600492e
