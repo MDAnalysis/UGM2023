@@ -51,7 +51,7 @@ This session is particularly geared towards individuals who might not
 have previous experiences contributing to open-source projects, and
 dealing with the peculiarities of [Github](https://github.com/).
 
-For more details, go to the [fix_an_issue](./fix_an_issue) directory.
+For more details, go to the [fix-an-issue](./fix-an-issue) directory.
 
 ### Build an MDAKit
 
