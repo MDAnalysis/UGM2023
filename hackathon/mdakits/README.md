@@ -26,8 +26,8 @@ For more details, see our [intro blog post on
 MDAKits](https://www.mdanalysis.org/2022/08/24/mdakits-intro/) and the
 MDAKits paper 
 
-  Irfan Alibay, Jonathan Barnoud, Oliver Beckstein, Richard J Gowers, 
-  Ian Kenney, Fiona Naughton, and Lily Wang. *MDAKits: A framework for
+  Irfan Alibay, Lily Wang, Fiona Naughton, Ian Kenney, Jonathan Barnoud, 
+  Richard J Gowers, and Oliver Beckstein.. *MDAKits: A framework for
   FAIR-compliant molecular simulation analysis.* In Meghann Agarwal,
   Chris Calloway, and Dillon Niederhut, editors, Proceedings of the
   22nd Python in Science Conference (SCIPY 2023), pages 76–84, Austin,
