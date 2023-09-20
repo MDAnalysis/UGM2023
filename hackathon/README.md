@@ -20,7 +20,6 @@ the hackathon, during and after.
   Madrid Room. 
   
   Address: R. Soeiro Pereira Gomes 2, 1600-198 Lisbon, PT
-* **Contact**: @fiona-naughton (Fiona Naughton)
   
 ## Schedule 
 
@@ -29,9 +28,20 @@ the hackathon, during and after.
 | 9:30 - 10:00  | Registration                     |             |
 | 10:00 - 10:30 | Introduction and team gathering  | Madrid room |
 | 10:30 - 12:00 | Hackathon                        | Madrid room |
-| 12:00 - 13:00 | Lunch                            |             |
+| 12:00 - 13:00 | *Lunch*\*                        |             |
 | 13:00 - 14:30 | Hackathon                        | Madrid room |
 | 14:30 - 15:00 | Wrap-up and [showcase](#showcase)| Madrid room |
+
+\* **Lunch is not provided** as part of the hackathon; attendees must 
+make their own arrangements. There are a number of nearby resturants 
+to choose from. You are welcome to leave for (and return from) lunch 
+at any time; the listed hours are to indicate what times members 
+of the MDAnalysis team will be on hand to help you with any 
+questions. 
+
+Coffee and tea *will* be provided. 
+
+
 
 ## How do I participate?
 ### Before the hackathon
