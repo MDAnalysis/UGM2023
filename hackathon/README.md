@@ -116,7 +116,7 @@ on your project.
 
 No code project is ever truly "finished", and we hope that you'll 
 stick around - whether this is maintaining and improving your new 
-contribution, or finding others ways you can contribute the broader 
+contribution, or finding other ways to contribute the broader 
 MDAnalysis ecosystem. We're always looking for more help!
 
 
