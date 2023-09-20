@@ -13,6 +13,7 @@ sharing of ideas and discussion in the lead up to
 the hackathon, during and after.
 
 * **Date**: Friday 29 September, 2023
+* **Check-in and registration**: 09:30 -- 10:00 (WEST)
 * **Time**: 10:00 -- 15:00 (WEST)
 * **Location**: [SANA Metropolitan
   Hotel](https://www.sanahotels.com/en/hotel/sana-metropolitan/)
