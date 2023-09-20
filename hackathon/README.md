@@ -112,7 +112,7 @@ an elevator pitch summary for your work ready!
 It's very possible that you won't "finish" a project within the 
 timelimit of the hackathon - and that's ok! Stay in contact with your
 team on GitHub or Discord - we strongly encourage you to keep working 
-on your project, so your hard work doesn't go to waste.
+on your project.
 
 No code project is ever truly "finished", and we hope that you'll 
 stick around - whether this is maintaining and improving your new 
