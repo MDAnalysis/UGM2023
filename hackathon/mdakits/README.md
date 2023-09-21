@@ -14,7 +14,7 @@ The MDAKits team (@ianmkenney, @lilyminium, @fiona-naughton, @IAlibay,
 
 ## About MDAKits...
 
-A MDAKit can be registered in the [MDAKits
+An MDAKit can be registered in the [MDAKits
 registry](https://mdakits.mdanalysis.org/mdakits.html) and thus be
 advertised to the whole MDAnalysis community. They will also be
 continuously tested against the latest released version and the
@@ -24,9 +24,9 @@ MDAKit.
 
 For more details, see our [intro blog post on
 MDAKits](https://www.mdanalysis.org/2022/08/24/mdakits-intro/) and the
-MDAKits paper 
+MDAKits paper: 
 
-  Irfan Alibay, Lily Wang, Fiona Naughton, Ian Kenney, Jonathan Barnoud, 
+> Irfan Alibay, Lily Wang, Fiona Naughton, Ian Kenney, Jonathan Barnoud, 
   Richard J Gowers, and Oliver Beckstein.. *MDAKits: A framework for
   FAIR-compliant molecular simulation analysis.* In Meghann Agarwal,
   Chris Calloway, and Dillon Niederhut, editors, Proceedings of the
@@ -37,12 +37,15 @@ MDAKits paper
 ## Getting started
 
 Pick an idea for a stand-alone feature you, or others, want to see 
-possible through MDAnalysis - see the list of Project ideas below!
-We encourage you to discuss any ideas in the lead-up to the hackathon, 
-here or on the UGM discord channel (More details TBA).
+possible through MDAnalysis - see the list of 
+[project ideas](#work-on-a-kit-based-on-a-requested-feature) below!
+We encourage you to discuss any ideas in the lead-up to the hackathon -
+look for proposed projects marked `[Project]` on the 
+[UGM issue tracker][issue-tracker], and join our [Discord server][discord]
+to follow the discussion on the [#hackathon channel][hackathon-channel].
 
 Read our guide on making an MDAKit (https://mdakits.mdanalysis.org/makingakit.html).
-(Additional materials TBA.)
+(*Additional materials TBA*)
 
 Some other things to keep in mind:
 - *Use the MDAnalysis API*: MDAnalysis features a mature API aimed to
@@ -65,7 +68,7 @@ you may have about making and registering an MDAKit. While we do not require
 collaboration, we do encourage you to make use of this opportunity being
 surrounded by other enthusiastic MDAnalysis contributors.
 
-## Project ideas
+## What to work on
 
 ### Bring your own idea!
 
@@ -80,11 +83,24 @@ If you already have code for this - awesome! You can jump right into
 If you have an idea but don't yet have code (or it's a work-in-progress) - 
 that's also awesome! Here is your opportunity to get things rolling.
 
-In both cases, we welcome you to suggest your idea ahead of the hackathon
-for discussion and to find others willing to help make your Kit a reality.
+In both cases, we recommend you share your idea ahead of the hackathon
+by raising an issue on the [UGM issue tracker][issue-tracker] (include
+`[project]` in the title, and provide an overview of what your Kit will 
+do and any current progress towards this). This will give you a dedicated 
+space to share and discuss your idea, get feedback, and 
+find interested attendees willing to help make your Kit a reality.
+Also post on the [#hackathon][hackathon-channel] discord channel and link 
+the issue.
 
 
 ### Work on a kit based on a requested feature
 
 See the [list of Project Ideas](./projects.md). Pick an idea from this
-list, or use it to inspire your own Kit idea.
+list, or use it to inspire your own Kit idea. Once you've identified a
+project you'd like to work on, you can comment as such on the project's
+associated issue on the [UGM issue tracker][issue-tracker]. See who else 
+is interested, and form a team to tackle the issue together!
+
+[discord]: https://discord.com/invite/sAKgZZnPv4
+[hackathon-channel]: https://discord.com/channels/807348386012987462/1152628719354118205
+[issue-tracker]: https://github.com/MDAnalysis/UGM2023/issues
