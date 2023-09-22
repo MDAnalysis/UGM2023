@@ -7,7 +7,7 @@ The [MDAnalysis User Group Meeting](https://www.mdanalysis.org/pages/ugm2023/) (
 [Faculty of Sciences of the University of Lisbon](https://www.ulisboa.pt/en/unidade-organica/faculty-sciences) (ULisboa) Auditorium, Building C1
 Campo Grande, 1749-016 Lisbon, Portugal
 
-*A campus map ([ULisboa Map.pdf](./ULisboaMap.pdf)) is included in this repo.* 
+*A campus map ([ULisboaMap.pdf](./ULisboaMap.pdf)) is included in this repo.* 
 
 ### **[Hackathon](./hackathon) (29th September)**
 
