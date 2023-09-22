@@ -1,5 +1,5 @@
 # MDAnalysis UGM 2023
-The [MDAnalysis User Group Meeting](https://www.mdanalysis.org/pages/ugm2023/) (UGM) will bring together users and developers of the MDAnalysis package from different communities. Our goal is to foster an opportunity to connect for interdisciplinary researchers and developers across biomolecular simulations, soft matter, biophysics and more. This repository includes relevant materials for the UGM.
+The [MDAnalysis User Group Meeting](https://www.mdanalysis.org/pages/ugm2023/) (UGM) will bring together users and developers of the MDAnalysis package from different communities. Our goal is to foster an interdisciplinary opportunity to connect for researchers and developers across biomolecular simulations, soft matter, biophysics and more. This repository includes relevant materials for the UGM.
 
 ## When and Where
 ### **Main Meeting (27th & 28th September)**
