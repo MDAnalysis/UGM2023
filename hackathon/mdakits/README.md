@@ -44,8 +44,7 @@ look for proposed projects marked `[Project]` on the
 [UGM issue tracker][issue-tracker], and join our [Discord server][discord]
 to follow the discussion on the [#hackathon channel][hackathon-channel].
 
-Read our guide on making an MDAKit (https://mdakits.mdanalysis.org/makingakit.html).
-(*Additional materials TBA*)
+Read our guide on making an MDAKit (https://mdakits.mdanalysis.org/makingakit.html). We also recommend watching our accompanying [video tutorial](https://www.youtube.com/watch?v=viCPUHkgSxg) which demonstrates the complete process of creating and adding an mdakit to the registry.
 
 Some other things to keep in mind:
 - *Use the MDAnalysis API*: MDAnalysis features a mature API aimed to
