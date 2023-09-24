@@ -26,3 +26,4 @@ The rules for this file:
 - Jenna M Swarthout Goddard @jennaswa
 - Brady Johnston @BradyAJohnston
 - Yuxuan Zhuang @yuxuanzhuang
+- Richard Gowers @richardjgowers
