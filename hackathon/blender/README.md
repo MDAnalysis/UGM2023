@@ -8,6 +8,7 @@ of MD trajectories. Under the hood, *Molecular Nodes* uses MDAnalysis for trajec
 ## Team
 
 @yuxuanzhuang will work with anyone interested in Blender/MDA.
+@bradyajohnston will be available remotely to answer questions and work on Blender/MDA.
 
 ## Background
 
