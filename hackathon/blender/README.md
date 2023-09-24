@@ -48,10 +48,12 @@ The easiest way to do this currently is via the
 [`BNotebooks`](https://github.com/bradyajohnston/BNotebooks) add-on for Blender, which
 enables registering Blender as a potential kernel for use in notebooks.
 
-See the [installation guide](./install.md) for how to install Molecular Nodes as an editable module and how to
+See [the installation guide](./install.md) and [the accompanying video](https://www.youtube.com/watch?v=Lmm7n2ie4rM) for how to install Molecular Nodes as an editable module and how to
 set up a Blender kernel.
 
-Please also check [related issue](https://github.com/BradyAJohnston/MolecularNodes/issues/292) and [brainstorming miro boards](https://miro.com/app/board/uXjVMmCOOaw=/?share_link_id=169508825266) (password: ugm2023lisbon).
+Please also check [related issue](https://github.com/BradyAJohnston/MolecularNodes/issues/292) and [brainstorming miro boards](https://miro.com/app/board/uXjVMmCOOaw=/?share_link_id=169508825266) (password: ugm2023lisbon) for implementation details.
+
+Join our [Discord server](https://discord.com/invite/sAKgZZnPv4) and follow [#hackathon](https://discord.com/channels/807348386012987462/1152628719354118205) channel for discussions.
 
 ## Project ideas
 
