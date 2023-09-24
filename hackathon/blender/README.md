@@ -28,7 +28,7 @@ The current implementations read all of the requested frames of the trajectory i
 memory, and discard the MDAnalysis session after importing is complete.
 
 ### A live MDAnalysis session
-@yuxuanzhuang already has a [working
+@yuxuanzhuang has recently merged a [working
 prototype](https://github.com/BradyAJohnston/MolecularNodes/pull/287) to maintain a live
 MDAnalysis session when importing trajectories, enabling the streaming of trajectories
 rather than loading into memory. This also enables the live viewing of an MDAnalysis
@@ -50,6 +50,8 @@ enables registering Blender as a potential kernel for use in notebooks.
 
 See the [installation guide](./install.md) for how to install Molecular Nodes as an editable module and how to
 set up a Blender kernel.
+
+Please also check [related issue](https://github.com/BradyAJohnston/MolecularNodes/issues/292) and [brainstorming miro boards](https://miro.com/app/board/uXjVMmCOOaw=/?share_link_id=169508825266) (password: ugm2023lisbon).
 
 ## Project ideas
 
