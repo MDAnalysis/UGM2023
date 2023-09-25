@@ -22,3 +22,8 @@ The rules for this file:
 - Irfan Alibay @IAlibay
 - Lily Wang @lilyminium
 - Fiona Naughton @fiona-naughton
+- Oliver Beckstein @orbeckst
+- Jenna M Swarthout Goddard @jennaswa
+- Brady Johnston @BradyAJohnston
+- Yuxuan Zhuang @yuxuanzhuang
+- Richard Gowers @richardjgowers
