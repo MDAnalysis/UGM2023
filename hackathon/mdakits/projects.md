@@ -6,7 +6,7 @@ want some inspiration, here are some ideas that the wider MDAnalysis
 community would really want to see. These ideas are in _random order_.
 
 
-## Trajectory clustering ##
+## Trajectory clustering ([Issue 25](https://github.com/MDAnalysis/UGM2023/issues/25)) ##
 
 It is common to use unsupervised learning algorithms to cluster a
 trajectory by similarity to discover different states.
@@ -75,7 +75,7 @@ Clustering methods could include -
 [UserGuide AnalysisBase]: https://userguide.mdanalysis.org/stable/examples/analysis/custom_trajectory_analysis.html
 
 
-## State-based density analysis ##
+## State-based density analysis ([Issue 26](https://github.com/MDAnalysis/UGM2023/issues/26)) ##
 
 Calculations of densities of solvent or ligands with the 
 [MDAnalysis.analysis.density][] code can be a powerful way to
@@ -120,7 +120,7 @@ States can be identified in many difference ways.
 [MDAnalysis.analysis.density.DensityAnalysis.run()]: https://docs.mdanalysis.org/stable/documentation_pages/analysis/density.html#MDAnalysis.analysis.density.DensityAnalysis.run
 
 
-## New file formats ##
+## New file formats ([Issue 27](https://github.com/MDAnalysis/UGM2023/issues/27)) ##
 
 MDAnalysis supports a wide range of file formats for reading/writing 
 coordinates and topologies 
@@ -168,7 +168,7 @@ know how to work with the newly supported file format!
 [mmcif_pdbx]: https://github.com/Electrostatics/mmcif_pdbx
 
 
-## Molecular volume and surface analysis
+## Molecular volume and surface analysis ([Issue 28](https://github.com/MDAnalysis/UGM2023/issues/28)) ##
 
 *This is one of the most wanted analysis features missing in MDAnalysis.*
 
@@ -214,7 +214,7 @@ For this project you would
    [10.12688/f1000research.7931.1](https://doi.org/10.12688/f1000research.7931.1))
 
 
-## Contact analysis ##
+## Contact analysis ([Issue 29](https://github.com/MDAnalysis/UGM2023/issues/29)) ##
 
 Identifying inter- and intra-molecular contacts is the basis of many 
 simulation analyses. A pair of atoms is often defined as “in contact” 
@@ -252,7 +252,7 @@ could be useful to many MDAnalysis users.
 [custom trajectory analysis]: https://userguide.mdanalysis.org/stable/examples/analysis/custom_trajectory_analysis.html
 
 
-## Secondary Structure analysis ##
+## Secondary Structure analysis ([Issue 30](https://github.com/MDAnalysis/UGM2023/issues/30)) ##
 
 Secondary structure is a fundamental part of protein conformation. 
 Algorithms such as STRIDE [[Frishman 1995]](#Frishman1995) and 
@@ -288,7 +288,7 @@ secondary structure could also be of great use.
 2. <a id="Kabsch1983"/>Kabsch, W. & Sander,C. (1983) Dictionary of protein secondary structure: pattern recognition of hydrogen-bonded and geometrical features. Biopolymers, 22: 2577-2637.
 
 
-## Voronoi tessellation ##
+## Voronoi tessellation ([Issue 31](https://github.com/MDAnalysis/UGM2023/issues/31)) ##
 
 A [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram) is 
 the division of a space into regions around a set of seed points such 
@@ -301,7 +301,7 @@ Voronoi tessellation and related algorithms (e.g. Delaunay triangulation)
 have been implemented in scipy (https://docs.scipy.org/doc/scipy/reference/spatial.html#delaunay-triangulation-convex-hulls-and-voronoi-diagrams).
 
 
-## Ring puckering ##
+## Ring puckering ([Issue 32](https://github.com/MDAnalysis/UGM2023/issues/32)) ##
 
 Ring groups can adopt a variety of “puckered” geometries that influence 
 their physical and chemical properties. Several formulations exist for 
