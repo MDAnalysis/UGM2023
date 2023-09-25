@@ -59,4 +59,4 @@ materials.
 
 The MDAnalysis UGM has been made possible in part by CZI grants; 2022-253062, and DAF2021-237663 (grant DOI https://doi.org/10.37921/426590wiobus), from the Chan Zuckerberg Initiative DAF, an advised fund of Silicon Valley Community Foundation (funder DOI 10.13039/100014989).
 
-The MDAnalysis also thanks [NumFOCUS](https://www.numfocus.org/) for its continued support as our fiscal sponsor.
+MDAnalysis also thanks [NumFOCUS](https://www.numfocus.org/) for its continued support as our fiscal sponsor.
