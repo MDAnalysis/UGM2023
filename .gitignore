@@ -162,3 +162,4 @@ cython_debug/
 
 # editor files
 *~
+**/.DS_Store
