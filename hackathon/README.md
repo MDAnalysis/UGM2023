@@ -121,6 +121,8 @@ If you do wish to share, add a slide for you/your team to the
 shared presentation. We have a
 [Google Slides template](https://docs.google.com/presentation/d/1nezBx545EJlKI2_JRlTIz1L7PO7cdeLOYCcUzi4TsEc/edit#slide=id.g1e811d8524a_0_0),
 also available as a PDF ([./ShowcaseTemplate.pdf](ShowcaseTemplate.pdf)).
+Please submit as in **PDF format** for portability by
+using [this Google form](https://docs.google.com/forms/d/e/1FAIpQLSc80buxTloXq817K3_y5oSUWF1Hs6V8ngjnW3BNmWze7oBK1A/viewform?usp=sf_link).
 Depending how many wish to present, time may be short, so have 
 an elevator pitch summary for your work ready!
 
