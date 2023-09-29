@@ -66,6 +66,20 @@ Coffee and tea *will* be provided.
      the discussion there. Even if you don't intend to work on an
      issue yourself (or are yet undecided), any questions, comments
      and thoughts are always useful.
+   - If you have suggestions or complaints about MDAnalysis code
+     or documentation, consider raising an issue on the
+     [MDAnalysis issue tracker](https://github.com/MDAnalysis/mdanalysis/issues)
+     or the [User Guide issue tracker](https://github.com/MDAnalysis/UserGuide/issues/new?assignees=&labels=&projects=&template=user_stories.md&title=)!
+     The User Guide has an issue template called "User stories"
+     that follows this template:
+     **As a *type of user*, I *want to achieve this goal*,
+     so that *reason why*.**
+     
+     If there is anything you wanted to do with your simulation
+     and couldn't figure out (easily) how, please leave us a story there
+     so we can improve our docs! We definitely also appreciate
+     contributions to our documentation as well if you have an idea
+     what you would like to see!
 
 ### At the hackathon
  - **Pick an idea and gather a team!** Use the associated issues (see
