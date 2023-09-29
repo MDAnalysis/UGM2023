@@ -104,7 +104,9 @@ product - you can talk about what you got done, what future plans
 are, and if there's still help wanted.
 
 If you do wish to share, add a slide for you/your team to the 
-shared presentation (*link TBA*) - a template will be provided. 
+shared presentation. We have a
+[Google Slides template](https://docs.google.com/presentation/d/1nezBx545EJlKI2_JRlTIz1L7PO7cdeLOYCcUzi4TsEc/edit#slide=id.g1e811d8524a_0_0),
+also available as a PDF ([./ShowcaseTemplate.pdf](ShowcaseTemplate.pdf)).
 Depending how many wish to present, time may be short, so have 
 an elevator pitch summary for your work ready!
 
