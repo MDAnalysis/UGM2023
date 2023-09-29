@@ -69,7 +69,7 @@ Coffee and tea *will* be provided.
    - If you have suggestions or complaints about MDAnalysis code
      or documentation, consider raising an issue on the
      [MDAnalysis issue tracker](https://github.com/MDAnalysis/mdanalysis/issues)
-     or the [User Guide issue tracker](https://github.com/MDAnalysis/UserGuide/issues)!
+     or the [User Guide issue tracker](https://github.com/MDAnalysis/UserGuide/issues/new?assignees=&labels=&projects=&template=user_stories.md&title=)!
      The User Guide has an issue template called "User stories"
      that follows this template:
      **As a *type of user*, I *want to achieve this goal*,
