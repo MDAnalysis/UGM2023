@@ -19,6 +19,7 @@ The rules for this file:
 -->
 
 **2023**
+- Cédric Bouysset @cbouy
 - Irfan Alibay @IAlibay
 - Lily Wang @lilyminium
 - Fiona Naughton @fiona-naughton

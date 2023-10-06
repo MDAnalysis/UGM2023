@@ -1,0 +1,15 @@
+name: ugm23_prolif
+channels:
+  - conda-forge
+dependencies:
+  - mdanalysis==2.6.1
+  - rdkit==2023.03.3
+  - scipy==1.11.2
+  - matplotlib==3.8.0
+  - seaborn==0.12.2
+  - jupyter==1.0.0
+  - kmedoids==0.4.3
+  - nglview==3.0.8
+  - pip:
+    - py3dmol==2.0.4
+    - prolif==2.0.1rc2
