@@ -15,7 +15,7 @@ Campo Grande, 1749-016 Lisbon, Portugal
 R. Soeiro Pereira Gomes 2, 1600-198 Lisbon, Portugal
 
 ## Code of Conduct
-All members of the MDAnalysis community and participants in this UGM are expected to abide by the MDAnalysis [Code of Conduct](https://www.mdanalysis.org/pages/conduct/) (CoC). If at any point you see or experience something that makes you uncomfortable, you may fill out the [reporting form](https://forms.gle/r2SMU4XcwM814CpJ9) or speak with any of the CoC committee members ([Jenna Swarthout Goddard](mailto:community@mdanalysis.org), [Micaela Matta](mailto:micaela@mdanalysis.org), [Richard Gowers](mailto:richard@mdanalysis.org)) at the UGM; the committee members will identify themselves at the start of the event.
+All members of the MDAnalysis community and participants in this UGM are expected to abide by the MDAnalysis [Code of Conduct](https://www.mdanalysis.org/conduct/) (CoC). If at any point you see or experience something that makes you uncomfortable, you may fill out the [reporting form](https://forms.gle/r2SMU4XcwM814CpJ9) or speak with any of the CoC committee members ([Jenna Swarthout Goddard](mailto:community@mdanalysis.org), [Micaela Matta](mailto:micaela@mdanalysis.org), [Richard Gowers](mailto:richard@mdanalysis.org)) at the UGM; the committee members will identify themselves at the start of the event.
 
 ## Contents
 
